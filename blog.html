@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllHomeo - Holistic Health Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <header class="header">
+        <div class="logo">
+            <img src="C:\Users\Hp\Desktop\Homopathi project\homeopathy\WhatsApp Image 2025-03-26 at 12.54.26_5a019347.jpg" alt="Clinic Logo" alt="Clinic Logo">
+            <h1>Holistic Wellness</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --secondary-color: #34495E;
+            --accent-color: #3498DB;
+            --light-color: #ECF0F1;
+            --text-color: #2C3E50;
+            --card-background: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .blog-header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .blog-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-header p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background-color: var(--card-background);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .blog-card-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .blog-card-content {
+            padding: 1.5rem;
+        }
+
+        .blog-card-content h2 {
+            color: var(--accent-color);
+            margin-bottom: 0.75rem;
+            font-size: 1.3rem;
+        }
+
+        .blog-card-content .meta {
+            display: flex;
+            justify-content: space-between;
+            color: #6C757D;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #E9ECEF;
+            padding-bottom: 0.75rem;
+        }
+
+        .blog-card-content p {
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        .read-more {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .read-more:hover {
+            background-color: var(--accent-color);
+        }
+
+        .newsletter-section {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 12px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 1.5rem auto 0;
+        }
+
+        .newsletter-form input {
+            flex-grow: 1;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .newsletter-form button {
+            padding: 0.75rem 1.5rem;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background-color: var(--text-color);
+        }
+
+        @media (max-width: 1024px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="blog-header">
+            <h1>Holistic Health Insights</h1>
+            <p>Explore natural wellness, homeopathic treatments, and holistic living through our expert-curated blog posts</p>
+        </header>
+
+        <section class="blog-grid">
+            <article class="blog-card">
+                <img src="C:\Users\Hp\Desktop\Homopathi project\homeopathy\images.jpeg" alt="Homeopathy for Stress Management" class="blog-card-image">
+                <div class="blog-card-content">
+                    <h2>Natural Stress Relief Techniques</h2>
+                    <div class="meta">
+                        <span>Dr. Sarah Green</span>
+                        <span>March 15, 2024</span>
+                    </div>
+                    <p>Discover holistic approaches to managing stress and anxiety through homeopathic treatments and lifestyle modifications.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="C:\Users\Hp\Desktop\Homopathi project\boost-immune-health.jpeg.webp" alt="Seasonal Wellness" class="blog-card-image">
+                <div class="blog-card-content">
+                    <h2>Boosting Immunity Naturally</h2>
+                    <div class="meta">
+                        <span>Dr. Michael Chen</span>
+                        <span>February 28, 2024</span>
+                    </div>
+                    <p>Learn effective homeopathic strategies to strengthen your immune system and prevent seasonal illnesses.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="C:\Users\Hp\Desktop\Homopathi project\AdobeStock_111774535-scaled.jpeg" alt="Nutrition and Homeopathy" class="blog-card-image">
+                <div class="blog-card-content">
+                    <h2>Nutrition's Role in Holistic Healing</h2>
+                    <div class="meta">
+                        <span>Dr. Emily Rodriguez</span>
+                        <span>January 20, 2024</span>
+                    </div>
+                    <p>Explore the connection between diet, nutrition, and homeopathic treatments for comprehensive wellness.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="C:\Users\Hp\Desktop\Homopathi project\images (2).jpeg" alt="Homeopathy for Children" class="blog-card-image">
+                <div class="blog-card-content">
+                    <h2>Gentle Healing for Children</h2>
+                    <div class="meta">
+                        <span>Dr. Sarah Green</span>
+                        <span>December 10, 2023</span>
+                    </div>
+                    <p>Understanding the benefits of homeopathic treatments for pediatric health and developmental support.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="C:\Users\Hp\Desktop\Homopathi project\Background-1.webp" alt="Mental Health Homeopathy" class="blog-card-image">
+                <div class="blog-card-content">
+                    <h2>Holistic Approach to Mental Wellness</h2>
+                    <div class="meta">
+                        <span>Dr. Michael Chen</span>
+                        <span>November 5, 2023</span>
+                    </div>
+                    <p>Exploring homeopathic solutions for managing depression, anxiety, and emotional well-being.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="C:\Users\Hp\Desktop\Homopathi project\images (3).jpeg" alt="Chronic Disease Management" class="blog-card-image">
+                <div class="blog-card-content">
+                    <h2>Managing Chronic Conditions Naturally</h2>
+                    <div class="meta">
+                        <span>Dr. Emily Rodriguez</span>
+                        <span>October 15, 2023</span>
+                    </div>
+                    <p>Long-term strategies for managing chronic health conditions through holistic homeopathic approaches.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="newsletter-section">
+            <h2>Stay Informed with Our Newsletter</h2>
+            <p>Receive weekly insights, health tips, and exclusive content directly in your inbox</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

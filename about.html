@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllHomeo -About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --secondary-color: #34495E;
+            --accent-color: #3498DB;
+            --light-color: #ECF0F1;
+            --text-color: #2C3E50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+        }
+
+        /* Header and Navigation */
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 60px;
+            margin-right: 15px;
+        }
+
+        .logo h1 {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* About Us Hero Section */
+        .about-hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 100px 50px;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        /* Clinic Philosophy Section */
+        .philosophy {
+            display: flex;
+            align-items: center;
+            padding: 80px 50px;
+            background-color: white;
+        }
+
+        .philosophy-content {
+            flex: 1;
+            padding-right: 50px;
+        }
+
+        .philosophy-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .philosophy-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Team Section */
+        .team {
+            background-color: var(--light-color);
+            padding: 80px 50px;
+            text-align: center;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .team-member {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Achievements Section */
+        .achievements {
+            background-color: white;
+            padding: 80px 50px;
+            text-align: center;
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .achievement-item {
+            background-color: var(--light-color);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .achievement-item h3 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-section {
+            flex: 1;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 15px;
+            color: var(--accent-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header, .about-hero, .philosophy, .team, .achievements, .footer {
+                padding: 30px 15px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .philosophy {
+                flex-direction: column;
+            }
+
+            .philosophy-content, .philosophy-image {
+                flex: none;
+                width: 100%;
+                padding-right: 0;
+            }
+
+            .team-grid, .achievements-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="logo">
+            <img src="C:\Users\Hp\Desktop\Homopathi project\homeopathy\WhatsApp Image 2025-03-26 at 12.54.26_5a019347.jpg" alt="Clinic Logo">
+            <h1>Holistic Wellness</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Us Hero Section -->
+    <section class="about-hero">
+        <h1>About Holistic Wellness</h1>
+        <p>Dedicated to providing personalized, natural healing through advanced homeopathic treatments</p>
+    </section>
+
+    <!-- Clinic Philosophy Section -->
+    <section class="philosophy">
+        <div class="philosophy-content">
+            <h2>Our Philosophy</h2>
+            <p>At Holistic Wellness, we believe in treating the whole person, not just symptoms. Our approach combines traditional homeopathic wisdom with modern medical insights to provide comprehensive, personalized care.</p>
+            <br>
+            <p>We are committed to understanding the unique health journey of each patient, addressing the root causes of illness, and supporting the body's natural healing mechanisms.</p>
+        </div>
+        <div class="philosophy-image">
+            <img src="C:\Users\Hp\Desktop\Homopathi project\homeopathy\herbs.webp" alt="Clinic Philosophy">
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <h2>Meet Our Experts</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="/api/placeholder/150/150" alt="Dr. Emily Roberts">
+                <h3>Dr. Emily Roberts</h3>
+                <p>Chief Homeopathic Physician</p>
+            </div>
+            <div class="team-member">
+                <img src="/api/placeholder/150/150" alt="Dr. Michael Chen">
+                <h3>Dr. Michael Chen</h3>
+                <p>Senior Consultant</p>
+            </div>
+            <div class="team-member">
+                <img src="/api/placeholder/150/150" alt="Dr. Sarah Martinez">
+                <h3>Dr. Sarah Martinez</h3>
+                <p>Pediatric Specialist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <h2>Our Achievements</h2>
+        <div class="achievements-grid">
+            <div class="achievement-item">
+                <h3>15+</h3>
+                <p>Years of Experience</p>
+            </div>
+            <div class="achievement-item">
+                <h3>5000+</h3>
+                <p>Patients Treated</p>
+            </div>
+            <div class="achievement-item">
+                <h3>98%</h3>
+                <p>Patient Satisfaction</p>
+            </div>
+            <div class="achievement-item">
+                <h3>4</h3>
+                <p>Clinic Locations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>123 Wellness Street</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@holisticwellness.com</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Services</p>
+        </div>
+        <div class="footer-section">
+            <h4>Business Hours</h4>
+            <p>Mon-Fri: 9am - 6pm</p>
+            <p>Saturday: 10am - 2pm</p>
+            <p>Sunday: Closed</p>
+        </div>
+    </footer>
+</body>
+</html>

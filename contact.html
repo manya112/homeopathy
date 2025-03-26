@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllHomeo - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <header class="header">
+        <div class="logo">
+            <img src="C:\Users\Hp\Desktop\Homopathi project\homeopathy\WhatsApp Image 2025-03-26 at 12.54.26_5a019347.jpg" alt="Clinic Logo" alt="Clinic Logo">
+            <h1>Holistic Wellness</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --secondary-color: #34495E;
+            --accent-color: #3498DB;
+            --light-color: #ECF0F1;
+            --text-color: #2C3E50;
+            --form-background: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .contact-header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .contact-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-header p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .contact-info {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .contact-details {
+            margin-bottom: 2rem;
+        }
+
+        .contact-details h2 {
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-details p {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-details i {
+            margin-right: 0.75rem;
+            font-size: 1.2rem;
+        }
+
+        .contact-form {
+            background-color: var(--form-background);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .contact-form h2 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #D1D8E0;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        .map-section {
+            margin-top: 2rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .map-section iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="contact-header">
+            <h1>Contact AllHomeo</h1>
+            <p>Have questions or want to schedule a consultation? Reach out to us and take the first step towards holistic healing.</p>
+        </header>
+
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="contact-details">
+                    <h2>Contact Information</h2>
+                    <p><i>📍</i> 123 Wellness Avenue, Holistic City, HC 12345</p>
+                    <p><i>☎️</i> (555) 123-4567</p>
+                    <p><i>✉️</i> info@allhomoeo.com</p>
+                    <p><i>⏰</i> Mon-Fri: 9:00 AM - 6:00 PM</p>
+                </div>
+                <div class="social-links">
+                    <h2>Connect With Us</h2>
+                    <p>Follow our social media for health tips and updates</p>
+                    <!-- Social media icons would go here in a real implementation -->
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <h2>Send Us a Message</h2>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <section class="map-section">
+            <iframe 
+                src="C:\Users\Hp\Desktop\Homopathi project\360_F_630706583_CeYbHyWjZ3O8EASnH4UGMmleDF8eqHcq.jpg " 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </section>
+    </div>
+</body>
+</html>
